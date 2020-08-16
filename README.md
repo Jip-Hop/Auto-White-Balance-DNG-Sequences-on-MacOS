@@ -13,5 +13,8 @@ I shoot with my EOS M, with Magic Lantern, in Auto White Balance mode. But the A
 ## How
 From each DNG sequence, 8 frames are analysed with [dcraw](https://www.dechifro.org/dcraw/). These AWB values are averaged into a single estimate white balance for the entire sequence. This value is then applied to all the frames in the sequence using [exiv2](https://www.exiv2.org).
 
+## Porting
+The awb.command contains the core functionality. It should be relatively easy to port to Linux (remove the part about installing dependencies with brew and install the dependencies manually). Probably would work under the Windows Subsystem for Linux too.
+
 ## Thanks to
 [Danne](http://github.com/dannephoto) and everyone credited in the [Switch](https://www.magiclantern.fm/forum/index.php?topic=15108.0) project. They figured out how to Auto White Balance DNG sequences with Switch. It does much more too, I recommend you check it out. I ported the AWB portion of Switch into this Workflow, so anyone can apply AWB to DNG sequences, regardless of which tool or camera was used to make the DNG files.
