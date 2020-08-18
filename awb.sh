@@ -25,27 +25,19 @@ nrOfFrameSamples=8
 bold=$(tput bold)
 normal=$(tput sgr0)
 
-# Remove this script from the disk if ran from tmp directory
-if [[ "$0" == "/private/tmp"* ]]; then
-    rm -- "$0"
-fi
-
-# Don't return anything if no match is found
-shopt -s nullglob
-# Case insensitive globbing
-shopt -s nocaseglob
+# Uses dot as decimal separator
+export LC_NUMERIC="C"
 
 # Read the folders to process from a text file
-IFS=$'\n' read -d '' -r -a folders < /private/tmp/DNGfoldersToAWB.txt
-echo $folders
-# Remove tmp file
-rm -f /private/tmp/DNGfoldersToAWB.txt
+IFS=$'\n' read -d '' -r -a folders < $1
 
-# Alternative way would be to process all folders in the current working directory:
-# # Store current working directory in variable
-# cwd=$(pwd)
-# # Loop over folders with DNG files, and process each folder
-# folders=("$cwd"/*/)
+# Cleanup if ran from tmp directory
+if [[ "$0" == "/tmp"* ]]; then
+    # Remove this script file
+    rm -f -- "$0"
+    # Remove input file
+    rm -f $1
+fi
 
 # Install dependencies
 dcrawInstalled=$(type -P dcraw)
@@ -75,8 +67,9 @@ nrOfFolders=${#folders[@]} # Number of elements in array
 remainingFolders=$nrOfFolders
 echo "${bold}Start processing $nrOfFolders folders.${normal}"
 for d in "${folders[@]}"; do
-    # Get all DNG files in current working directory
-    files=("$d/"*.dng)
+    # Get all DNG files in current directory
+    IFS=$'\n'
+    files=($(find $d -name "*.dng" -type f ))
 
     nrOfFrames=${#files[@]}
     echo "Start processing $nrOfFrames frames."
@@ -112,29 +105,29 @@ for d in "${folders[@]}"; do
         # Split into new multipliers array
         IFS=' ' read -r -a multipliers <<<$dcrawOutput
 
-        averageMultipliers[0]=$(bc -l <<<${averageMultipliers[0]}+${multipliers[0]})
-        averageMultipliers[1]=$(bc -l <<<${averageMultipliers[1]}+${multipliers[1]})
-        averageMultipliers[2]=$(bc -l <<<${averageMultipliers[2]}+${multipliers[2]})
-        averageMultipliers[3]=$(bc -l <<<${averageMultipliers[3]}+${multipliers[3]})
+        averageMultipliers[0]=$(echo ${averageMultipliers[0]}+${multipliers[0]} | bc -l)
+        averageMultipliers[1]=$(echo ${averageMultipliers[1]}+${multipliers[1]} | bc -l)
+        averageMultipliers[2]=$(echo ${averageMultipliers[2]}+${multipliers[2]} | bc -l)
+        averageMultipliers[3]=$(echo ${averageMultipliers[3]}+${multipliers[3]} | bc -l)
 
         # Increment with step size
         currentStep=$(($currentStep + $stepSize))
     done
 
     # Average the summed up multipliers
-    averageMultipliers[0]=$(bc -l <<<${averageMultipliers[0]}/$nrOfFrameSamples)
-    averageMultipliers[1]=$(bc -l <<<${averageMultipliers[1]}/$nrOfFrameSamples)
-    averageMultipliers[2]=$(bc -l <<<${averageMultipliers[2]}/$nrOfFrameSamples)
-    averageMultipliers[3]=$(bc -l <<<${averageMultipliers[3]}/$nrOfFrameSamples)
+    averageMultipliers[0]=$(echo ${averageMultipliers[0]}/$nrOfFrameSamples | bc -l)
+    averageMultipliers[1]=$(echo ${averageMultipliers[1]}/$nrOfFrameSamples | bc -l)
+    averageMultipliers[2]=$(echo ${averageMultipliers[2]}/$nrOfFrameSamples | bc -l)
+    averageMultipliers[3]=$(echo ${averageMultipliers[3]}/$nrOfFrameSamples | bc -l)
 
     echo "Average multipliers: ${averageMultipliers[0]} ${averageMultipliers[1]} ${averageMultipliers[2]} ${averageMultipliers[3]}."
 
-    vit_01=$(bc -l <<<${averageMultipliers[1]}/${averageMultipliers[0]})
-    vit_02=$(bc -l <<<${averageMultipliers[3]}/${averageMultipliers[2]})
+    vit_01=$(echo ${averageMultipliers[1]}/${averageMultipliers[0]} | bc -l)
+    vit_02=$(echo ${averageMultipliers[3]}/${averageMultipliers[2]} | bc -l)
 
     # Multiply by 1000000
-    vit_01=$(bc <<<$vit_01*1000000)
-    vit_02=$(bc <<<$vit_02*1000000)
+    vit_01=$(echo $vit_01*1000000 | bc)
+    vit_02=$(echo $vit_02*1000000 | bc)
 
     # Round to an integer
     vit_01=$(printf "%.0f\n" "$vit_01")

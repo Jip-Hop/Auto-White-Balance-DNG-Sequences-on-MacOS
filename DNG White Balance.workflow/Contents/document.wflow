@@ -187,14 +187,14 @@ done</string>
 					</dict>
 				</dict>
 				<key>isViewVisible</key>
-				<false/>
+				<true/>
 				<key>location</key>
-				<string>761.500000:164.000000</string>
+				<string>349.500000:495.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>action</key>
@@ -232,7 +232,7 @@ done</string>
 					<key>enteredRTFDData</key>
 					<data>
 					cnRmZAAAAAADAAAAAgAAAAcAAABUWFQucnRm
-					AQAAAC5ZJgAAKwAAAAEAAAAAAACAgRYAAMgP
+					AQAAAC5hJgAAKwAAAAEAAAAAAACAiRYAAMgP
 					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -428,176 +428,176 @@ done</string>
 					Ym9sZD0kKHRwdXQgYm9sZClcCm5vcm1hbD0k
 					KHRwdXQgc2dyMClcClwKIyBVc2VzIGRvdCBh
 					cyBkZWNpbWFsIHNlcGFyYXRvclwKZXhwb3J0
-					IExDX05VTUVSSUM9IkMiXApcCiMgUmVtb3Zl
-					IHRoaXMgc2NyaXB0IGZyb20gdGhlIGRpc2sg
-					aWYgcmFuIGZyb20gdG1wIGRpcmVjdG9yeVwK
-					aWYgW1sgIiQwIiA9PSAiL3RtcCIqIF1dOyB0
-					aGVuXAogICAgcm0gLWYgLS0gIiQwIlwKZmlc
-					ClwKIyBSZWFkIHRoZSBmb2xkZXJzIHRvIHBy
-					b2Nlc3MgZnJvbSBhIHRleHQgZmlsZVwKSUZT
-					PSQnXFxuJyByZWFkIC1kICcnIC1yIC1hIGZv
-					bGRlcnMgPCAkMVwKXAojIFJlbW92ZSB0bXAg
-					aW5wdXQgZmlsZVwKcm0gLWYgJDFcClwKIyBJ
-					bnN0YWxsIGRlcGVuZGVuY2llc1wKZGNyYXdJ
-					bnN0YWxsZWQ9JCh0eXBlIC1QIGRjcmF3KVwK
-					ZXhpdjJJbnN0YWxsZWQ9JCh0eXBlIC1QIGV4
-					aXYyKVwKXAplY2hvICIkXHtub3JtYWxcfSJc
-					ClwKaWYgW1sgJGRjcmF3SW5zdGFsbGVkICYm
-					ICRleGl2Mkluc3RhbGxlZCBdXTsgdGhlblwK
-					ICAgIGVjaG8gIkRlcGVuZGVuY2llcyBhcmUg
-					aW5zdGFsbGVkLiJcCmVsc2VcCiAgICBlY2hv
-					ICJZb3UgbmVlZCBkY3JhdyAoJChbWyAkZGNy
-					YXdJbnN0YWxsZWQgXV0gfHwgZWNobyAibm90
-					ICIpaW5zdGFsbGVkKSBhbmQgZXhpdjIgKCQo
-					W1sgJGV4aXYySW5zdGFsbGVkIF1dIHx8IGVj
-					aG8gIm5vdCAiKWluc3RhbGxlZCkuIlwKICAg
-					IGVjaG8gIkkgY2FuIGluc3RhbGwgaXQgZm9y
-					IHlvdSwgT0s/IlwKICAgIHJlYWQgLWUgLXAg
-					Ilkgb3IgTj8gIiB5blwKICAgIGlmIFtbICJ5
-					IiA9ICIkeW4iIHx8ICJZIiA9ICIkeW4iIF1d
-					OyB0aGVuXAogICAgICAgIGJyZXdJbnN0YWxs
-					ZWQ9JCh0eXBlIC1QIGJyZXcpXAogICAgICAg
-					IGlmICEgW1sgYnJld0luc3RhbGxlZCBdXTsg
-					dGhlblwKICAgICAgICAgICAgL2Jpbi9iYXNo
-					IC1jICIkKGN1cmwgLWZzU0wgaHR0cHM6Ly9y
-					YXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0hv
-					bWVicmV3L2luc3RhbGwvbWFzdGVyL2luc3Rh
-					bGwuc2gpIlwKICAgICAgICBmaVwKICAgICAg
-					ICBicmV3IGluc3RhbGwgZGNyYXcgZXhpdjJc
-					CiAgICBlbHNlXAogICAgICAgIGVjaG8gIldl
-					IG5lZWQgZGNyYXcgYW5kIGV4aXYyLiBTdG9w
-					cGluZy4iXAogICAgICAgIGV4aXRcCiAgICBm
-					aVwKZmlcClwKbnJPZkZvbGRlcnM9JFx7I2Zv
-					bGRlcnNbQF1cfSAjIE51bWJlciBvZiBlbGVt
-					ZW50cyBpbiBhcnJheVwKcmVtYWluaW5nRm9s
-					ZGVycz0kbnJPZkZvbGRlcnNcCmVjaG8gIiRc
-					e2JvbGRcfVN0YXJ0IHByb2Nlc3NpbmcgJG5y
-					T2ZGb2xkZXJzIGZvbGRlcnMuJFx7bm9ybWFs
-					XH0iXApmb3IgZCBpbiAiJFx7Zm9sZGVyc1tA
-					XVx9IjsgZG9cCiAgICAjIEdldCBhbGwgRE5H
-					IGZpbGVzIGluIGN1cnJlbnQgZGlyZWN0b3J5
-					XAogICAgSUZTPSQnXFxuJ1wKICAgIGZpbGVz
-					PSgkKGZpbmQgJGQgLW5hbWUgIiouZG5nIiAt
-					dHlwZSBmICkpXApcCiAgICBuck9mRnJhbWVz
-					PSRceyNmaWxlc1tAXVx9XAogICAgZWNobyAi
-					U3RhcnQgcHJvY2Vzc2luZyAkbnJPZkZyYW1l
-					cyBmcmFtZXMuIlwKXAogICAgaWYgISAoKCRu
-					ck9mRnJhbWVzID4gMCkpOyB0aGVuXAogICAg
-					ICAgICMgU2tpcCB0aGlzIGZvbGRlciBpZiB0
-					aGVyZSBhcmUgbm8gRE5HIGZyYW1lc1wKICAg
-					ICAgICBlY2hvICJTa2lwIGZvbGRlcjogJGQu
-					IlwKICAgICAgICBjb250aW51ZVwKICAgIGZp
-					XApcCiAgICBpZiAoKG5yT2ZGcmFtZVNhbXBs
-					ZXMgPiBuck9mRnJhbWVzKSk7IHRoZW5cCiAg
-					ICAgICAgZWNobyAiTGltaXQgYW1vdW50IG9m
-					IHNhbXBsZXMgdG8gdGhlIG51bWJlciBvZiBm
-					cmFtZXMuIlwKICAgICAgICBuck9mRnJhbWVT
-					YW1wbGVzPSRuck9mRnJhbWVzXAogICAgZmlc
-					ClwKICAgIGVjaG8gIlRha2luZyAkbnJPZkZy
-					YW1lU2FtcGxlcyBmcmFtZSBzYW1wbGVzIGZv
-					ciBBdXRvIFdoaXRlIEJhbGFuY2UuIlwKXAog
-					ICAgc3RlcFNpemU9JCgoJG5yT2ZGcmFtZXMg
-					LyAkbnJPZkZyYW1lU2FtcGxlcykpXApcCiAg
-					ICBjdXJyZW50U3RlcD0kc3RlcFNpemUgICAg
-					ICAgICAgICAgICAgIyBTdGFydCBoZXJlXAog
-					ICAgbGFzdFN0ZXA9JHN0ZXBTaXplKiRuck9m
-					RnJhbWVTYW1wbGVzICMgRW5kIGhlcmVcCiAg
-					ICB0eXBlc2V0IC1pIGN1cnJlbnRTdGVwIGxh
-					c3RTdGVwICAgICAgIyBEZWNsYXJlIHRoZXNl
-					IHZhcmlhYmxlcyBhcyBpbnRlZ2Vyc1wKXAog
-					ICAgYXZlcmFnZU11bHRpcGxpZXJzPSgwIDAg
-					MCAwKVwKXAogICAgd2hpbGUgKChjdXJyZW50
-					U3RlcCA8PSBsYXN0U3RlcCkpOyBkb1wKXAog
-					ICAgICAgIGZpbGVQYXRoPSRce2ZpbGVzW2N1
-					cnJlbnRTdGVwIC0gMV1cfSAjIC0xIGJlY2F1
-					c2UgYXJyYXkgaW5kZXggc3RhcnRzIGF0IDBc
-					CiAgICAgICAgZWNobyAiQVdCIGZyYW1lOiAk
-					KGJhc2VuYW1lIC0tICRmaWxlUGF0aCkuIlwK
-					ICAgICAgICBkY3Jhd091dHB1dD0kKGRjcmF3
-					IC1UIC1hIC12IC1jICRmaWxlUGF0aCAyPiYx
-					IHwgYXdrICcvbXVsdGlwbGllcnMvIFx7IHBy
-					aW50ICQyLCQzLCQ0LCQ1OyBleGl0IFx9Jylc
-					CiAgICAgICAgZWNobyAiUmVzdWx0IG9mIEFX
-					QjogJGRjcmF3T3V0cHV0LiJcClwKICAgICAg
-					ICAjIFNwbGl0IGludG8gbmV3IG11bHRpcGxp
-					ZXJzIGFycmF5XAogICAgICAgIElGUz0nICcg
-					cmVhZCAtciAtYSBtdWx0aXBsaWVycyA8PDwk
-					ZGNyYXdPdXRwdXRcClwKICAgICAgICBhdmVy
-					YWdlTXVsdGlwbGllcnNbMF09JChlY2hvICRc
-					e2F2ZXJhZ2VNdWx0aXBsaWVyc1swXVx9KyRc
-					e211bHRpcGxpZXJzWzBdXH0gfCBiYyAtbClc
-					CiAgICAgICAgYXZlcmFnZU11bHRpcGxpZXJz
-					WzFdPSQoZWNobyAkXHthdmVyYWdlTXVsdGlw
-					bGllcnNbMV1cfSskXHttdWx0aXBsaWVyc1sx
-					XVx9IHwgYmMgLWwpXAogICAgICAgIGF2ZXJh
-					Z2VNdWx0aXBsaWVyc1syXT0kKGVjaG8gJFx7
-					YXZlcmFnZU11bHRpcGxpZXJzWzJdXH0rJFx7
-					bXVsdGlwbGllcnNbMl1cfSB8IGJjIC1sKVwK
-					ICAgICAgICBhdmVyYWdlTXVsdGlwbGllcnNb
-					M109JChlY2hvICRce2F2ZXJhZ2VNdWx0aXBs
-					aWVyc1szXVx9KyRce211bHRpcGxpZXJzWzNd
-					XH0gfCBiYyAtbClcClwKICAgICAgICAjIElu
-					Y3JlbWVudCB3aXRoIHN0ZXAgc2l6ZVwKICAg
-					ICAgICBjdXJyZW50U3RlcD0kKCgkY3VycmVu
-					dFN0ZXAgKyAkc3RlcFNpemUpKVwKICAgIGRv
-					bmVcClwKICAgICMgQXZlcmFnZSB0aGUgc3Vt
-					bWVkIHVwIG11bHRpcGxpZXJzXAogICAgYXZl
-					cmFnZU11bHRpcGxpZXJzWzBdPSQoZWNobyAk
-					XHthdmVyYWdlTXVsdGlwbGllcnNbMF1cfS8k
-					bnJPZkZyYW1lU2FtcGxlcyB8IGJjIC1sKVwK
-					ICAgIGF2ZXJhZ2VNdWx0aXBsaWVyc1sxXT0k
+					IExDX05VTUVSSUM9IkMiXApcCiMgUmVhZCB0
+					aGUgZm9sZGVycyB0byBwcm9jZXNzIGZyb20g
+					YSB0ZXh0IGZpbGVcCklGUz0kJ1xcbicgcmVh
+					ZCAtZCAnJyAtciAtYSBmb2xkZXJzIDwgJDFc
+					ClwKIyBDbGVhbnVwIGlmIHJhbiBmcm9tIHRt
+					cCBkaXJlY3RvcnlcCmlmIFtbICIkMCIgPT0g
+					Ii90bXAiKiBdXTsgdGhlblwKICAgICMgUmVt
+					b3ZlIHRoaXMgc2NyaXB0IGZpbGVcCiAgICBy
+					bSAtZiAtLSAiJDAiXAogICAgIyBSZW1vdmUg
+					aW5wdXQgZmlsZVwKICAgIHJtIC1mICQxXApm
+					aVwKXAojIEluc3RhbGwgZGVwZW5kZW5jaWVz
+					XApkY3Jhd0luc3RhbGxlZD0kKHR5cGUgLVAg
+					ZGNyYXcpXApleGl2Mkluc3RhbGxlZD0kKHR5
+					cGUgLVAgZXhpdjIpXApcCmVjaG8gIiRce25v
+					cm1hbFx9IlwKXAppZiBbWyAkZGNyYXdJbnN0
+					YWxsZWQgJiYgJGV4aXYySW5zdGFsbGVkIF1d
+					OyB0aGVuXAogICAgZWNobyAiRGVwZW5kZW5j
+					aWVzIGFyZSBpbnN0YWxsZWQuIlwKZWxzZVwK
+					ICAgIGVjaG8gIllvdSBuZWVkIGRjcmF3ICgk
+					KFtbICRkY3Jhd0luc3RhbGxlZCBdXSB8fCBl
+					Y2hvICJub3QgIilpbnN0YWxsZWQpIGFuZCBl
+					eGl2MiAoJChbWyAkZXhpdjJJbnN0YWxsZWQg
+					XV0gfHwgZWNobyAibm90ICIpaW5zdGFsbGVk
+					KS4iXAogICAgZWNobyAiSSBjYW4gaW5zdGFs
+					bCBpdCBmb3IgeW91LCBPSz8iXAogICAgcmVh
+					ZCAtZSAtcCAiWSBvciBOPyAiIHluXAogICAg
+					aWYgW1sgInkiID0gIiR5biIgfHwgIlkiID0g
+					IiR5biIgXV07IHRoZW5cCiAgICAgICAgYnJl
+					d0luc3RhbGxlZD0kKHR5cGUgLVAgYnJldylc
+					CiAgICAgICAgaWYgISBbWyBicmV3SW5zdGFs
+					bGVkIF1dOyB0aGVuXAogICAgICAgICAgICAv
+					YmluL2Jhc2ggLWMgIiQoY3VybCAtZnNTTCBo
+					dHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVu
+					dC5jb20vSG9tZWJyZXcvaW5zdGFsbC9tYXN0
+					ZXIvaW5zdGFsbC5zaCkiXAogICAgICAgIGZp
+					XAogICAgICAgIGJyZXcgaW5zdGFsbCBkY3Jh
+					dyBleGl2MlwKICAgIGVsc2VcCiAgICAgICAg
+					ZWNobyAiV2UgbmVlZCBkY3JhdyBhbmQgZXhp
+					djIuIFN0b3BwaW5nLiJcCiAgICAgICAgZXhp
+					dFwKICAgIGZpXApmaVwKXApuck9mRm9sZGVy
+					cz0kXHsjZm9sZGVyc1tAXVx9ICMgTnVtYmVy
+					IG9mIGVsZW1lbnRzIGluIGFycmF5XApyZW1h
+					aW5pbmdGb2xkZXJzPSRuck9mRm9sZGVyc1wK
+					ZWNobyAiJFx7Ym9sZFx9U3RhcnQgcHJvY2Vz
+					c2luZyAkbnJPZkZvbGRlcnMgZm9sZGVycy4k
+					XHtub3JtYWxcfSJcCmZvciBkIGluICIkXHtm
+					b2xkZXJzW0BdXH0iOyBkb1wKICAgICMgR2V0
+					IGFsbCBETkcgZmlsZXMgaW4gY3VycmVudCBk
+					aXJlY3RvcnlcCiAgICBJRlM9JCdcXG4nXAog
+					ICAgZmlsZXM9KCQoZmluZCAkZCAtbmFtZSAi
+					Ki5kbmciIC10eXBlIGYgKSlcClwKICAgIG5y
+					T2ZGcmFtZXM9JFx7I2ZpbGVzW0BdXH1cCiAg
+					ICBlY2hvICJTdGFydCBwcm9jZXNzaW5nICRu
+					ck9mRnJhbWVzIGZyYW1lcy4iXApcCiAgICBp
+					ZiAhICgoJG5yT2ZGcmFtZXMgPiAwKSk7IHRo
+					ZW5cCiAgICAgICAgIyBTa2lwIHRoaXMgZm9s
+					ZGVyIGlmIHRoZXJlIGFyZSBubyBETkcgZnJh
+					bWVzXAogICAgICAgIGVjaG8gIlNraXAgZm9s
+					ZGVyOiAkZC4iXAogICAgICAgIGNvbnRpbnVl
+					XAogICAgZmlcClwKICAgIGlmICgobnJPZkZy
+					YW1lU2FtcGxlcyA+IG5yT2ZGcmFtZXMpKTsg
+					dGhlblwKICAgICAgICBlY2hvICJMaW1pdCBh
+					bW91bnQgb2Ygc2FtcGxlcyB0byB0aGUgbnVt
+					YmVyIG9mIGZyYW1lcy4iXAogICAgICAgIG5y
+					T2ZGcmFtZVNhbXBsZXM9JG5yT2ZGcmFtZXNc
+					CiAgICBmaVwKXAogICAgZWNobyAiVGFraW5n
+					ICRuck9mRnJhbWVTYW1wbGVzIGZyYW1lIHNh
+					bXBsZXMgZm9yIEF1dG8gV2hpdGUgQmFsYW5j
+					ZS4iXApcCiAgICBzdGVwU2l6ZT0kKCgkbnJP
+					ZkZyYW1lcyAvICRuck9mRnJhbWVTYW1wbGVz
+					KSlcClwKICAgIGN1cnJlbnRTdGVwPSRzdGVw
+					U2l6ZSAgICAgICAgICAgICAgICAjIFN0YXJ0
+					IGhlcmVcCiAgICBsYXN0U3RlcD0kc3RlcFNp
+					emUqJG5yT2ZGcmFtZVNhbXBsZXMgIyBFbmQg
+					aGVyZVwKICAgIHR5cGVzZXQgLWkgY3VycmVu
+					dFN0ZXAgbGFzdFN0ZXAgICAgICAjIERlY2xh
+					cmUgdGhlc2UgdmFyaWFibGVzIGFzIGludGVn
+					ZXJzXApcCiAgICBhdmVyYWdlTXVsdGlwbGll
+					cnM9KDAgMCAwIDApXApcCiAgICB3aGlsZSAo
+					KGN1cnJlbnRTdGVwIDw9IGxhc3RTdGVwKSk7
+					IGRvXApcCiAgICAgICAgZmlsZVBhdGg9JFx7
+					ZmlsZXNbY3VycmVudFN0ZXAgLSAxXVx9ICMg
+					LTEgYmVjYXVzZSBhcnJheSBpbmRleCBzdGFy
+					dHMgYXQgMFwKICAgICAgICBlY2hvICJBV0Ig
+					ZnJhbWU6ICQoYmFzZW5hbWUgLS0gJGZpbGVQ
+					YXRoKS4iXAogICAgICAgIGRjcmF3T3V0cHV0
+					PSQoZGNyYXcgLVQgLWEgLXYgLWMgJGZpbGVQ
+					YXRoIDI+JjEgfCBhd2sgJy9tdWx0aXBsaWVy
+					cy8gXHsgcHJpbnQgJDIsJDMsJDQsJDU7IGV4
+					aXQgXH0nKVwKICAgICAgICBlY2hvICJSZXN1
+					bHQgb2YgQVdCOiAkZGNyYXdPdXRwdXQuIlwK
+					XAogICAgICAgICMgU3BsaXQgaW50byBuZXcg
+					bXVsdGlwbGllcnMgYXJyYXlcCiAgICAgICAg
+					SUZTPScgJyByZWFkIC1yIC1hIG11bHRpcGxp
+					ZXJzIDw8PCRkY3Jhd091dHB1dFwKXAogICAg
+					ICAgIGF2ZXJhZ2VNdWx0aXBsaWVyc1swXT0k
 					KGVjaG8gJFx7YXZlcmFnZU11bHRpcGxpZXJz
-					WzFdXH0vJG5yT2ZGcmFtZVNhbXBsZXMgfCBi
-					YyAtbClcCiAgICBhdmVyYWdlTXVsdGlwbGll
-					cnNbMl09JChlY2hvICRce2F2ZXJhZ2VNdWx0
-					aXBsaWVyc1syXVx9LyRuck9mRnJhbWVTYW1w
-					bGVzIHwgYmMgLWwpXAogICAgYXZlcmFnZU11
-					bHRpcGxpZXJzWzNdPSQoZWNobyAkXHthdmVy
-					YWdlTXVsdGlwbGllcnNbM11cfS8kbnJPZkZy
-					YW1lU2FtcGxlcyB8IGJjIC1sKVwKXAogICAg
-					ZWNobyAiQXZlcmFnZSBtdWx0aXBsaWVyczog
-					JFx7YXZlcmFnZU11bHRpcGxpZXJzWzBdXH0g
-					JFx7YXZlcmFnZU11bHRpcGxpZXJzWzFdXH0g
-					JFx7YXZlcmFnZU11bHRpcGxpZXJzWzJdXH0g
-					JFx7YXZlcmFnZU11bHRpcGxpZXJzWzNdXH0u
-					IlwKXAogICAgdml0XzAxPSQoZWNobyAkXHth
-					dmVyYWdlTXVsdGlwbGllcnNbMV1cfS8kXHth
-					dmVyYWdlTXVsdGlwbGllcnNbMF1cfSB8IGJj
-					IC1sKVwKICAgIHZpdF8wMj0kKGVjaG8gJFx7
-					YXZlcmFnZU11bHRpcGxpZXJzWzNdXH0vJFx7
-					YXZlcmFnZU11bHRpcGxpZXJzWzJdXH0gfCBi
-					YyAtbClcClwKICAgICMgTXVsdGlwbHkgYnkg
-					MTAwMDAwMFwKICAgIHZpdF8wMT0kKGVjaG8g
-					JHZpdF8wMSoxMDAwMDAwIHwgYmMpXAogICAg
-					dml0XzAyPSQoZWNobyAkdml0XzAyKjEwMDAw
-					MDAgfCBiYylcClwKICAgICMgUm91bmQgdG8g
-					YW4gaW50ZWdlclwKICAgIHZpdF8wMT0kKHBy
-					aW50ZiAiJS4wZlxcbiIgIiR2aXRfMDEiKVwK
-					ICAgIHZpdF8wMj0kKHByaW50ZiAiJS4wZlxc
-					biIgIiR2aXRfMDIiKVwKXAogICAgZWNobyAi
-					U3RhcnQgYXBwbHlpbmcgV0IgdG8gdGhpcyBE
-					Tkcgc2VxdWVuY2UuLi4iXAogICAgIyBBcHBs
-					eSB0aGUgd2hpdGUgYmFsYW5jZSB2YWx1ZSB0
-					byBhbGwgRE5HIGZpbGVzIGluIHBhcmFsbGVs
-					IChhbW91bnQgb2YgdGhyZWFkcyBiYXNlZCBv
-					biBhbW91bnQgb2YgQ1BVIHRocmVhZHMpXAog
-					ICAgcHJpbnRmICclc1xcMCcgIiRce2ZpbGVz
-					W0BdXH0iIHwgeGFyZ3MgLTAgLVAgJChzeXNj
-					dGwgLW4gaHcubmNwdSkgLW4gMSBleGl2MiAt
-					TSJzZXQgRXhpZi5JbWFnZS5Bc1Nob3ROZXV0
-					cmFsIFJhdGlvbmFsICR2aXRfMDEvMTAwMDAw
-					MCAxLzEgJHZpdF8wMi8xMDAwMDAwIlwKXAog
-					ICAgd2FpdCAjIFdhaXQgZm9yIHRoZSB4YXJn
-					cyBwcm9jZXNzIHRvIGZpbmlzaFwKICAgIGVj
-					aG8gIkRvbmUgYXBwbHlpbmcgV0IgdG8gdGhp
-					cyBETkcgc2VxdWVuY2UhIlwKICAgICgocmVt
-					YWluaW5nRm9sZGVycyAtPSAxKSlcCiAgICBl
-					Y2hvICIkXHtib2xkXH1Gb2xkZXJzIHJlbWFp
-					bmluZzogJHJlbWFpbmluZ0ZvbGRlcnMuJFx7
-					bm9ybWFsXH0iXApcCmRvbmVcClwKZWNobyAi
-					JFx7Ym9sZFx9RG9uZSEkXHtub3JtYWxcfSJc
-					Cn0BAAAAIwAAAAEAAAAHAAAAVFhULnJ0ZhAA
-					AADMxjtftgEAAAAAAAAAAAAA
+					WzBdXH0rJFx7bXVsdGlwbGllcnNbMF1cfSB8
+					IGJjIC1sKVwKICAgICAgICBhdmVyYWdlTXVs
+					dGlwbGllcnNbMV09JChlY2hvICRce2F2ZXJh
+					Z2VNdWx0aXBsaWVyc1sxXVx9KyRce211bHRp
+					cGxpZXJzWzFdXH0gfCBiYyAtbClcCiAgICAg
+					ICAgYXZlcmFnZU11bHRpcGxpZXJzWzJdPSQo
+					ZWNobyAkXHthdmVyYWdlTXVsdGlwbGllcnNb
+					Ml1cfSskXHttdWx0aXBsaWVyc1syXVx9IHwg
+					YmMgLWwpXAogICAgICAgIGF2ZXJhZ2VNdWx0
+					aXBsaWVyc1szXT0kKGVjaG8gJFx7YXZlcmFn
+					ZU11bHRpcGxpZXJzWzNdXH0rJFx7bXVsdGlw
+					bGllcnNbM11cfSB8IGJjIC1sKVwKXAogICAg
+					ICAgICMgSW5jcmVtZW50IHdpdGggc3RlcCBz
+					aXplXAogICAgICAgIGN1cnJlbnRTdGVwPSQo
+					KCRjdXJyZW50U3RlcCArICRzdGVwU2l6ZSkp
+					XAogICAgZG9uZVwKXAogICAgIyBBdmVyYWdl
+					IHRoZSBzdW1tZWQgdXAgbXVsdGlwbGllcnNc
+					CiAgICBhdmVyYWdlTXVsdGlwbGllcnNbMF09
+					JChlY2hvICRce2F2ZXJhZ2VNdWx0aXBsaWVy
+					c1swXVx9LyRuck9mRnJhbWVTYW1wbGVzIHwg
+					YmMgLWwpXAogICAgYXZlcmFnZU11bHRpcGxp
+					ZXJzWzFdPSQoZWNobyAkXHthdmVyYWdlTXVs
+					dGlwbGllcnNbMV1cfS8kbnJPZkZyYW1lU2Ft
+					cGxlcyB8IGJjIC1sKVwKICAgIGF2ZXJhZ2VN
+					dWx0aXBsaWVyc1syXT0kKGVjaG8gJFx7YXZl
+					cmFnZU11bHRpcGxpZXJzWzJdXH0vJG5yT2ZG
+					cmFtZVNhbXBsZXMgfCBiYyAtbClcCiAgICBh
+					dmVyYWdlTXVsdGlwbGllcnNbM109JChlY2hv
+					ICRce2F2ZXJhZ2VNdWx0aXBsaWVyc1szXVx9
+					LyRuck9mRnJhbWVTYW1wbGVzIHwgYmMgLWwp
+					XApcCiAgICBlY2hvICJBdmVyYWdlIG11bHRp
+					cGxpZXJzOiAkXHthdmVyYWdlTXVsdGlwbGll
+					cnNbMF1cfSAkXHthdmVyYWdlTXVsdGlwbGll
+					cnNbMV1cfSAkXHthdmVyYWdlTXVsdGlwbGll
+					cnNbMl1cfSAkXHthdmVyYWdlTXVsdGlwbGll
+					cnNbM11cfS4iXApcCiAgICB2aXRfMDE9JChl
+					Y2hvICRce2F2ZXJhZ2VNdWx0aXBsaWVyc1sx
+					XVx9LyRce2F2ZXJhZ2VNdWx0aXBsaWVyc1sw
+					XVx9IHwgYmMgLWwpXAogICAgdml0XzAyPSQo
+					ZWNobyAkXHthdmVyYWdlTXVsdGlwbGllcnNb
+					M11cfS8kXHthdmVyYWdlTXVsdGlwbGllcnNb
+					Ml1cfSB8IGJjIC1sKVwKXAogICAgIyBNdWx0
+					aXBseSBieSAxMDAwMDAwXAogICAgdml0XzAx
+					PSQoZWNobyAkdml0XzAxKjEwMDAwMDAgfCBi
+					YylcCiAgICB2aXRfMDI9JChlY2hvICR2aXRf
+					MDIqMTAwMDAwMCB8IGJjKVwKXAogICAgIyBS
+					b3VuZCB0byBhbiBpbnRlZ2VyXAogICAgdml0
+					XzAxPSQocHJpbnRmICIlLjBmXFxuIiAiJHZp
+					dF8wMSIpXAogICAgdml0XzAyPSQocHJpbnRm
+					ICIlLjBmXFxuIiAiJHZpdF8wMiIpXApcCiAg
+					ICBlY2hvICJTdGFydCBhcHBseWluZyBXQiB0
+					byB0aGlzIERORyBzZXF1ZW5jZS4uLiJcCiAg
+					ICAjIEFwcGx5IHRoZSB3aGl0ZSBiYWxhbmNl
+					IHZhbHVlIHRvIGFsbCBETkcgZmlsZXMgaW4g
+					cGFyYWxsZWwgKGFtb3VudCBvZiB0aHJlYWRz
+					IGJhc2VkIG9uIGFtb3VudCBvZiBDUFUgdGhy
+					ZWFkcylcCiAgICBwcmludGYgJyVzXFwwJyAi
+					JFx7ZmlsZXNbQF1cfSIgfCB4YXJncyAtMCAt
+					UCAkKHN5c2N0bCAtbiBody5uY3B1KSAtbiAx
+					IGV4aXYyIC1NInNldCBFeGlmLkltYWdlLkFz
+					U2hvdE5ldXRyYWwgUmF0aW9uYWwgJHZpdF8w
+					MS8xMDAwMDAwIDEvMSAkdml0XzAyLzEwMDAw
+					MDAiXApcCiAgICB3YWl0ICMgV2FpdCBmb3Ig
+					dGhlIHhhcmdzIHByb2Nlc3MgdG8gZmluaXNo
+					XAogICAgZWNobyAiRG9uZSBhcHBseWluZyBX
+					QiB0byB0aGlzIERORyBzZXF1ZW5jZSEiXAog
+					ICAgKChyZW1haW5pbmdGb2xkZXJzIC09IDEp
+					KVwKICAgIGVjaG8gIiRce2JvbGRcfUZvbGRl
+					cnMgcmVtYWluaW5nOiAkcmVtYWluaW5nRm9s
+					ZGVycy4kXHtub3JtYWxcfSJcClwKZG9uZVwK
+					XAplY2hvICIkXHtib2xkXH1Eb25lISRce25v
+					cm1hbFx9IlwKfQEAAAAjAAAAAQAAAAcAAABU
+					WFQucnRmEAAAAGjNO1+2AQAAAAAAAAAAAAA=
 					</data>
 					<key>enteredText</key>
 					<string>#!/bin/bash
@@ -630,16 +630,16 @@ normal=$(tput sgr0)
 # Uses dot as decimal separator
 export LC_NUMERIC="C"
 
-# Remove this script from the disk if ran from tmp directory
-if [[ "$0" == "/tmp"* ]]; then
-    rm -f -- "$0"
-fi
-
 # Read the folders to process from a text file
 IFS=$'\n' read -d '' -r -a folders &lt; $1
 
-# Remove tmp input file
-rm -f $1
+# Cleanup if ran from tmp directory
+if [[ "$0" == "/tmp"* ]]; then
+    # Remove this script file
+    rm -f -- "$0"
+    # Remove input file
+    rm -f $1
+fi
 
 # Install dependencies
 dcrawInstalled=$(type -P dcraw)
@@ -805,17 +805,15 @@ echo "${bold}Done!${normal}"
 						<string>1</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
-				<true/>
+				<false/>
 				<key>location</key>
-				<string>761.500000:382.000000</string>
+				<string>349.500000:536.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Get Specified Text.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>action</key>
@@ -1011,14 +1009,14 @@ echo "${bold}Done!${normal}"
 					</dict>
 				</dict>
 				<key>isViewVisible</key>
-				<true/>
+				<false/>
 				<key>location</key>
-				<string>761.500000:613.000000</string>
+				<string>349.500000:577.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/New Text File.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>action</key>
@@ -1183,7 +1181,7 @@ chmod +x /tmp/awb.sh</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>761.500000:795.000000</string>
+				<string>349.500000:759.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -1287,7 +1285,7 @@ end run</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>761.500000:1040.000000</string>
+				<string>349.500000:1022.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -1297,31 +1295,31 @@ end run</string>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>20463E84-BF5B-4186-B4C9-AB9C4A5A0373</key>
+		<key>1B78883A-05DE-4804-A187-B0F3C2430ADE</key>
+		<dict>
+			<key>from</key>
+			<string>A77FCBA6-43DD-4BAE-9329-C89928B2F1D9 - A77FCBA6-43DD-4BAE-9329-C89928B2F1D9</string>
+			<key>to</key>
+			<string>11584BA1-718C-4106-A7C0-D7D9582748C3 - 11584BA1-718C-4106-A7C0-D7D9582748C3</string>
+		</dict>
+		<key>95CF871E-D392-4E76-BF46-C3848C8D1EDC</key>
 		<dict>
 			<key>from</key>
 			<string>11584BA1-718C-4106-A7C0-D7D9582748C3 - 11584BA1-718C-4106-A7C0-D7D9582748C3</string>
 			<key>to</key>
 			<string>ECF996F6-CB22-4FEE-91DC-E8E3CC249899 - ECF996F6-CB22-4FEE-91DC-E8E3CC249899</string>
 		</dict>
-		<key>3E0EA7E2-A768-4AFD-B24B-57FECEE24FD4</key>
+		<key>985EA622-A409-4509-9F27-847EC49C5DCF</key>
 		<dict>
 			<key>from</key>
 			<string>ECF996F6-CB22-4FEE-91DC-E8E3CC249899 - ECF996F6-CB22-4FEE-91DC-E8E3CC249899</string>
 			<key>to</key>
 			<string>5DD90BEE-6155-4169-9E81-FC628D8A6CDE - 5DD90BEE-6155-4169-9E81-FC628D8A6CDE</string>
 		</dict>
-		<key>41B90948-73E7-433C-8DFE-69CCBAF11A41</key>
+		<key>E2F4C637-7C58-44CA-874C-26B4A0922A5D</key>
 		<dict>
 			<key>from</key>
 			<string>30ED1206-DEBB-4C52-993A-6790588F1CB8 - 30ED1206-DEBB-4C52-993A-6790588F1CB8</string>
-		</dict>
-		<key>68CFAB95-4F44-4202-B890-41E5DD2C319F</key>
-		<dict>
-			<key>from</key>
-			<string>A77FCBA6-43DD-4BAE-9329-C89928B2F1D9 - A77FCBA6-43DD-4BAE-9329-C89928B2F1D9</string>
-			<key>to</key>
-			<string>11584BA1-718C-4106-A7C0-D7D9582748C3 - 11584BA1-718C-4106-A7C0-D7D9582748C3</string>
 		</dict>
 	</dict>
 	<key>variables</key>
