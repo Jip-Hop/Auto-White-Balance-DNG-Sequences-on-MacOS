@@ -1,0 +1,1383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMApplicationBuild</key>
+	<string>444.42</string>
+	<key>AMApplicationVersion</key>
+	<string>2.9</string>
+	<key>AMDocumentVersion</key>
+	<string>2</string>
+	<key>actions</key>
+	<array>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.string</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>2.0.3</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>COMMAND_STRING</key>
+					<dict/>
+					<key>CheckedForUserDefaultShell</key>
+					<dict/>
+					<key>inputMethod</key>
+					<dict/>
+					<key>shell</key>
+					<dict/>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.string</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run Shell Script.action</string>
+				<key>ActionName</key>
+				<string>Run Shell Script</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>COMMAND_STRING</key>
+					<string>######################################################################################
+# This Workflow receives folders selected in the Finder as input.
+# It will output the paths to those folders to a text file in a temporary folder.
+# It will also generate a shell script in the temporary folder,
+# which will be opened in the Terminal and read the folder paths from the text file.
+# This workaround allows the script to run properly in the Terminal,
+# allows for user input to install dependencies and shows the script progress on screen.
+# The text file and script will be removed from the temporary folder automatically.
+######################################################################################
+
+# Make empty file
+printf "" &gt; /tmp/DNGfoldersToAWB.txt
+
+# Write path names of selected folders to new lines
+for f in "$@"
+do
+	echo "$f" &gt;&gt; /tmp/DNGfoldersToAWB.txt
+done</string>
+					<key>CheckedForUserDefaultShell</key>
+					<true/>
+					<key>inputMethod</key>
+					<integer>1</integer>
+					<key>shell</key>
+					<string>/bin/bash</string>
+					<key>source</key>
+					<string></string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.RunShellScript</string>
+				<key>CFBundleVersion</key>
+				<string>2.0.3</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunShellScriptAction</string>
+				<key>InputUUID</key>
+				<string>F18E23C3-117B-4598-92FE-BA419EAEA08F</string>
+				<key>Keywords</key>
+				<array>
+					<string>Shell</string>
+					<string>Script</string>
+					<string>Command</string>
+					<string>Run</string>
+					<string>Unix</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>44084E36-08A5-4EB8-88D9-3D1093930C9A</string>
+				<key>UUID</key>
+				<string>30ED1206-DEBB-4C52-993A-6790588F1CB8</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<integer>0</integer>
+						<key>name</key>
+						<string>inputMethod</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+					<key>1</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>1</string>
+					</dict>
+					<key>2</key>
+					<dict>
+						<key>default value</key>
+						<false/>
+						<key>name</key>
+						<string>CheckedForUserDefaultShell</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>2</string>
+					</dict>
+					<key>3</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>COMMAND_STRING</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>3</string>
+					</dict>
+					<key>4</key>
+					<dict>
+						<key>default value</key>
+						<string>/bin/sh</string>
+						<key>name</key>
+						<string>shell</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>4</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<false/>
+				<key>location</key>
+				<string>761.500000:164.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMActionVersion</key>
+				<string>1.2.1</string>
+				<key>AMApplication</key>
+				<array>
+					<string>TextEdit</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>enteredRTFDData</key>
+					<dict/>
+					<key>enteredText</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>Single</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.attributed-string</string>
+					</array>
+				</dict>
+				<key>AMRequiredResources</key>
+				<array/>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Get Specified Text.action</string>
+				<key>ActionName</key>
+				<string>Get Specified Text</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>enteredRTFDData</key>
+					<data>
+					cnRmZAAAAAADAAAAAgAAAAcAAABUWFQucnRm
+					AQAAAC5ZJgAAKwAAAAEAAAAAAACAgRYAAMgP
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+					AAAAAAAAAAAAAAAAAAAAAAAAAHtccnRmMVxh
+					bnNpXGFuc2ljcGcxMjUyXGNvY29hcnRmMTY3
+					MVxjb2NvYXN1YnJ0ZjYwMAp7XGZvbnR0Ymxc
+					ZjBcZnN3aXNzXGZjaGFyc2V0MCBIZWx2ZXRp
+					Y2E7fQp7XGNvbG9ydGJsO1xyZWQyNTVcZ3Jl
+					ZW4yNTVcYmx1ZTI1NTt9CntcKlxleHBhbmRl
+					ZGNvbG9ydGJsOzt9ClxwYXJkXHR4NTYwXHR4
+					MTEyMFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0
+					eDMzNjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBc
+					dHg1NjAwXHR4NjE2MFx0eDY3MjBccGFyZGly
+					bmF0dXJhbFxwYXJ0aWdodGVuZmFjdG9yMAoK
+					XGYwXGZzMjQgXGNmMCAjIS9iaW4vYmFzaFwK
+					XAojIEdOVSBwdWJsaWMgbGljZW5zZVwKXAoj
+					IFRoaXMgcHJvZ3JhbSBpcyBmcmVlIHNvZnR3
+					YXJlOyB5b3UgY2FuIHJlZGlzdHJpYnV0ZSBp
+					dCBhbmQvb3JcCiMgbW9kaWZ5IGl0IHVuZGVy
+					IHRoZSB0ZXJtcyBvZiB0aGUgR05VIEdlbmVy
+					YWwgUHVibGljIExpY2Vuc2VcCiMgYXMgcHVi
+					bGlzaGVkIGJ5IHRoZSBGcmVlIFNvZnR3YXJl
+					IEZvdW5kYXRpb247IGVpdGhlciB2ZXJzaW9u
+					IDJcCiMgb2YgdGhlIExpY2Vuc2UsIG9yIChh
+					dCB5b3VyIG9wdGlvbikgYW55IGxhdGVyIHZl
+					cnNpb24uXAojXAojIFRoaXMgcHJvZ3JhbSBp
+					cyBkaXN0cmlidXRlZCBpbiB0aGUgaG9wZSB0
+					aGF0IGl0IHdpbGwgYmUgdXNlZnVsLFwKIyBi
+					dXQgV0lUSE9VVCBBTlkgV0FSUkFOVFk7IHdp
+					dGhvdXQgZXZlbiB0aGUgaW1wbGllZCB3YXJy
+					YW50eSBvZlwKIyBNRVJDSEFOVEFCSUxJVFkg
+					b3IgRklUTkVTUyBGT1IgQSBQQVJUSUNVTEFS
+					IFBVUlBPU0UuIFNlZSB0aGVcCiMgR05VIEdl
+					bmVyYWwgUHVibGljIExpY2Vuc2UgZm9yIG1v
+					cmUgZGV0YWlscy5cCiNcCiMgWW91IHNob3Vs
+					ZCBoYXZlIHJlY2VpdmVkIGEgY29weSBvZiB0
+					aGUgR05VIEdlbmVyYWwgUHVibGljIExpY2Vu
+					c2VcCiMgYWxvbmcgd2l0aCB0aGlzIHByb2dy
+					YW07IGlmIG5vdCwgd3JpdGUgdG8gdGhlXAoj
+					IEZyZWUgU29mdHdhcmUgRm91bmRhdGlvbiwg
+					SW5jLixcCiMgNTEgRnJhbmtsaW4gU3RyZWV0
+					LCBGaWZ0aCBGbG9vcixcCiMgQm9zdG9uLCBN
+					QSAwMjExMC0xMzAxLCBVU0EuXApcCiMgQ29u
+					ZmlnIHZhcmlhYmxlc1wKbnJPZkZyYW1lU2Ft
+					cGxlcz04XApcCiMgVmFyaWFibGVzIGZvciB0
+					ZXJtaW5hbCBvdXRwdXQgZm9ybWF0dGluZ1wK
+					Ym9sZD0kKHRwdXQgYm9sZClcCm5vcm1hbD0k
+					KHRwdXQgc2dyMClcClwKIyBVc2VzIGRvdCBh
+					cyBkZWNpbWFsIHNlcGFyYXRvclwKZXhwb3J0
+					IExDX05VTUVSSUM9IkMiXApcCiMgUmVtb3Zl
+					IHRoaXMgc2NyaXB0IGZyb20gdGhlIGRpc2sg
+					aWYgcmFuIGZyb20gdG1wIGRpcmVjdG9yeVwK
+					aWYgW1sgIiQwIiA9PSAiL3RtcCIqIF1dOyB0
+					aGVuXAogICAgcm0gLWYgLS0gIiQwIlwKZmlc
+					ClwKIyBSZWFkIHRoZSBmb2xkZXJzIHRvIHBy
+					b2Nlc3MgZnJvbSBhIHRleHQgZmlsZVwKSUZT
+					PSQnXFxuJyByZWFkIC1kICcnIC1yIC1hIGZv
+					bGRlcnMgPCAkMVwKXAojIFJlbW92ZSB0bXAg
+					aW5wdXQgZmlsZVwKcm0gLWYgJDFcClwKIyBJ
+					bnN0YWxsIGRlcGVuZGVuY2llc1wKZGNyYXdJ
+					bnN0YWxsZWQ9JCh0eXBlIC1QIGRjcmF3KVwK
+					ZXhpdjJJbnN0YWxsZWQ9JCh0eXBlIC1QIGV4
+					aXYyKVwKXAplY2hvICIkXHtub3JtYWxcfSJc
+					ClwKaWYgW1sgJGRjcmF3SW5zdGFsbGVkICYm
+					ICRleGl2Mkluc3RhbGxlZCBdXTsgdGhlblwK
+					ICAgIGVjaG8gIkRlcGVuZGVuY2llcyBhcmUg
+					aW5zdGFsbGVkLiJcCmVsc2VcCiAgICBlY2hv
+					ICJZb3UgbmVlZCBkY3JhdyAoJChbWyAkZGNy
+					YXdJbnN0YWxsZWQgXV0gfHwgZWNobyAibm90
+					ICIpaW5zdGFsbGVkKSBhbmQgZXhpdjIgKCQo
+					W1sgJGV4aXYySW5zdGFsbGVkIF1dIHx8IGVj
+					aG8gIm5vdCAiKWluc3RhbGxlZCkuIlwKICAg
+					IGVjaG8gIkkgY2FuIGluc3RhbGwgaXQgZm9y
+					IHlvdSwgT0s/IlwKICAgIHJlYWQgLWUgLXAg
+					Ilkgb3IgTj8gIiB5blwKICAgIGlmIFtbICJ5
+					IiA9ICIkeW4iIHx8ICJZIiA9ICIkeW4iIF1d
+					OyB0aGVuXAogICAgICAgIGJyZXdJbnN0YWxs
+					ZWQ9JCh0eXBlIC1QIGJyZXcpXAogICAgICAg
+					IGlmICEgW1sgYnJld0luc3RhbGxlZCBdXTsg
+					dGhlblwKICAgICAgICAgICAgL2Jpbi9iYXNo
+					IC1jICIkKGN1cmwgLWZzU0wgaHR0cHM6Ly9y
+					YXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0hv
+					bWVicmV3L2luc3RhbGwvbWFzdGVyL2luc3Rh
+					bGwuc2gpIlwKICAgICAgICBmaVwKICAgICAg
+					ICBicmV3IGluc3RhbGwgZGNyYXcgZXhpdjJc
+					CiAgICBlbHNlXAogICAgICAgIGVjaG8gIldl
+					IG5lZWQgZGNyYXcgYW5kIGV4aXYyLiBTdG9w
+					cGluZy4iXAogICAgICAgIGV4aXRcCiAgICBm
+					aVwKZmlcClwKbnJPZkZvbGRlcnM9JFx7I2Zv
+					bGRlcnNbQF1cfSAjIE51bWJlciBvZiBlbGVt
+					ZW50cyBpbiBhcnJheVwKcmVtYWluaW5nRm9s
+					ZGVycz0kbnJPZkZvbGRlcnNcCmVjaG8gIiRc
+					e2JvbGRcfVN0YXJ0IHByb2Nlc3NpbmcgJG5y
+					T2ZGb2xkZXJzIGZvbGRlcnMuJFx7bm9ybWFs
+					XH0iXApmb3IgZCBpbiAiJFx7Zm9sZGVyc1tA
+					XVx9IjsgZG9cCiAgICAjIEdldCBhbGwgRE5H
+					IGZpbGVzIGluIGN1cnJlbnQgZGlyZWN0b3J5
+					XAogICAgSUZTPSQnXFxuJ1wKICAgIGZpbGVz
+					PSgkKGZpbmQgJGQgLW5hbWUgIiouZG5nIiAt
+					dHlwZSBmICkpXApcCiAgICBuck9mRnJhbWVz
+					PSRceyNmaWxlc1tAXVx9XAogICAgZWNobyAi
+					U3RhcnQgcHJvY2Vzc2luZyAkbnJPZkZyYW1l
+					cyBmcmFtZXMuIlwKXAogICAgaWYgISAoKCRu
+					ck9mRnJhbWVzID4gMCkpOyB0aGVuXAogICAg
+					ICAgICMgU2tpcCB0aGlzIGZvbGRlciBpZiB0
+					aGVyZSBhcmUgbm8gRE5HIGZyYW1lc1wKICAg
+					ICAgICBlY2hvICJTa2lwIGZvbGRlcjogJGQu
+					IlwKICAgICAgICBjb250aW51ZVwKICAgIGZp
+					XApcCiAgICBpZiAoKG5yT2ZGcmFtZVNhbXBs
+					ZXMgPiBuck9mRnJhbWVzKSk7IHRoZW5cCiAg
+					ICAgICAgZWNobyAiTGltaXQgYW1vdW50IG9m
+					IHNhbXBsZXMgdG8gdGhlIG51bWJlciBvZiBm
+					cmFtZXMuIlwKICAgICAgICBuck9mRnJhbWVT
+					YW1wbGVzPSRuck9mRnJhbWVzXAogICAgZmlc
+					ClwKICAgIGVjaG8gIlRha2luZyAkbnJPZkZy
+					YW1lU2FtcGxlcyBmcmFtZSBzYW1wbGVzIGZv
+					ciBBdXRvIFdoaXRlIEJhbGFuY2UuIlwKXAog
+					ICAgc3RlcFNpemU9JCgoJG5yT2ZGcmFtZXMg
+					LyAkbnJPZkZyYW1lU2FtcGxlcykpXApcCiAg
+					ICBjdXJyZW50U3RlcD0kc3RlcFNpemUgICAg
+					ICAgICAgICAgICAgIyBTdGFydCBoZXJlXAog
+					ICAgbGFzdFN0ZXA9JHN0ZXBTaXplKiRuck9m
+					RnJhbWVTYW1wbGVzICMgRW5kIGhlcmVcCiAg
+					ICB0eXBlc2V0IC1pIGN1cnJlbnRTdGVwIGxh
+					c3RTdGVwICAgICAgIyBEZWNsYXJlIHRoZXNl
+					IHZhcmlhYmxlcyBhcyBpbnRlZ2Vyc1wKXAog
+					ICAgYXZlcmFnZU11bHRpcGxpZXJzPSgwIDAg
+					MCAwKVwKXAogICAgd2hpbGUgKChjdXJyZW50
+					U3RlcCA8PSBsYXN0U3RlcCkpOyBkb1wKXAog
+					ICAgICAgIGZpbGVQYXRoPSRce2ZpbGVzW2N1
+					cnJlbnRTdGVwIC0gMV1cfSAjIC0xIGJlY2F1
+					c2UgYXJyYXkgaW5kZXggc3RhcnRzIGF0IDBc
+					CiAgICAgICAgZWNobyAiQVdCIGZyYW1lOiAk
+					KGJhc2VuYW1lIC0tICRmaWxlUGF0aCkuIlwK
+					ICAgICAgICBkY3Jhd091dHB1dD0kKGRjcmF3
+					IC1UIC1hIC12IC1jICRmaWxlUGF0aCAyPiYx
+					IHwgYXdrICcvbXVsdGlwbGllcnMvIFx7IHBy
+					aW50ICQyLCQzLCQ0LCQ1OyBleGl0IFx9Jylc
+					CiAgICAgICAgZWNobyAiUmVzdWx0IG9mIEFX
+					QjogJGRjcmF3T3V0cHV0LiJcClwKICAgICAg
+					ICAjIFNwbGl0IGludG8gbmV3IG11bHRpcGxp
+					ZXJzIGFycmF5XAogICAgICAgIElGUz0nICcg
+					cmVhZCAtciAtYSBtdWx0aXBsaWVycyA8PDwk
+					ZGNyYXdPdXRwdXRcClwKICAgICAgICBhdmVy
+					YWdlTXVsdGlwbGllcnNbMF09JChlY2hvICRc
+					e2F2ZXJhZ2VNdWx0aXBsaWVyc1swXVx9KyRc
+					e211bHRpcGxpZXJzWzBdXH0gfCBiYyAtbClc
+					CiAgICAgICAgYXZlcmFnZU11bHRpcGxpZXJz
+					WzFdPSQoZWNobyAkXHthdmVyYWdlTXVsdGlw
+					bGllcnNbMV1cfSskXHttdWx0aXBsaWVyc1sx
+					XVx9IHwgYmMgLWwpXAogICAgICAgIGF2ZXJh
+					Z2VNdWx0aXBsaWVyc1syXT0kKGVjaG8gJFx7
+					YXZlcmFnZU11bHRpcGxpZXJzWzJdXH0rJFx7
+					bXVsdGlwbGllcnNbMl1cfSB8IGJjIC1sKVwK
+					ICAgICAgICBhdmVyYWdlTXVsdGlwbGllcnNb
+					M109JChlY2hvICRce2F2ZXJhZ2VNdWx0aXBs
+					aWVyc1szXVx9KyRce211bHRpcGxpZXJzWzNd
+					XH0gfCBiYyAtbClcClwKICAgICAgICAjIElu
+					Y3JlbWVudCB3aXRoIHN0ZXAgc2l6ZVwKICAg
+					ICAgICBjdXJyZW50U3RlcD0kKCgkY3VycmVu
+					dFN0ZXAgKyAkc3RlcFNpemUpKVwKICAgIGRv
+					bmVcClwKICAgICMgQXZlcmFnZSB0aGUgc3Vt
+					bWVkIHVwIG11bHRpcGxpZXJzXAogICAgYXZl
+					cmFnZU11bHRpcGxpZXJzWzBdPSQoZWNobyAk
+					XHthdmVyYWdlTXVsdGlwbGllcnNbMF1cfS8k
+					bnJPZkZyYW1lU2FtcGxlcyB8IGJjIC1sKVwK
+					ICAgIGF2ZXJhZ2VNdWx0aXBsaWVyc1sxXT0k
+					KGVjaG8gJFx7YXZlcmFnZU11bHRpcGxpZXJz
+					WzFdXH0vJG5yT2ZGcmFtZVNhbXBsZXMgfCBi
+					YyAtbClcCiAgICBhdmVyYWdlTXVsdGlwbGll
+					cnNbMl09JChlY2hvICRce2F2ZXJhZ2VNdWx0
+					aXBsaWVyc1syXVx9LyRuck9mRnJhbWVTYW1w
+					bGVzIHwgYmMgLWwpXAogICAgYXZlcmFnZU11
+					bHRpcGxpZXJzWzNdPSQoZWNobyAkXHthdmVy
+					YWdlTXVsdGlwbGllcnNbM11cfS8kbnJPZkZy
+					YW1lU2FtcGxlcyB8IGJjIC1sKVwKXAogICAg
+					ZWNobyAiQXZlcmFnZSBtdWx0aXBsaWVyczog
+					JFx7YXZlcmFnZU11bHRpcGxpZXJzWzBdXH0g
+					JFx7YXZlcmFnZU11bHRpcGxpZXJzWzFdXH0g
+					JFx7YXZlcmFnZU11bHRpcGxpZXJzWzJdXH0g
+					JFx7YXZlcmFnZU11bHRpcGxpZXJzWzNdXH0u
+					IlwKXAogICAgdml0XzAxPSQoZWNobyAkXHth
+					dmVyYWdlTXVsdGlwbGllcnNbMV1cfS8kXHth
+					dmVyYWdlTXVsdGlwbGllcnNbMF1cfSB8IGJj
+					IC1sKVwKICAgIHZpdF8wMj0kKGVjaG8gJFx7
+					YXZlcmFnZU11bHRpcGxpZXJzWzNdXH0vJFx7
+					YXZlcmFnZU11bHRpcGxpZXJzWzJdXH0gfCBi
+					YyAtbClcClwKICAgICMgTXVsdGlwbHkgYnkg
+					MTAwMDAwMFwKICAgIHZpdF8wMT0kKGVjaG8g
+					JHZpdF8wMSoxMDAwMDAwIHwgYmMpXAogICAg
+					dml0XzAyPSQoZWNobyAkdml0XzAyKjEwMDAw
+					MDAgfCBiYylcClwKICAgICMgUm91bmQgdG8g
+					YW4gaW50ZWdlclwKICAgIHZpdF8wMT0kKHBy
+					aW50ZiAiJS4wZlxcbiIgIiR2aXRfMDEiKVwK
+					ICAgIHZpdF8wMj0kKHByaW50ZiAiJS4wZlxc
+					biIgIiR2aXRfMDIiKVwKXAogICAgZWNobyAi
+					U3RhcnQgYXBwbHlpbmcgV0IgdG8gdGhpcyBE
+					Tkcgc2VxdWVuY2UuLi4iXAogICAgIyBBcHBs
+					eSB0aGUgd2hpdGUgYmFsYW5jZSB2YWx1ZSB0
+					byBhbGwgRE5HIGZpbGVzIGluIHBhcmFsbGVs
+					IChhbW91bnQgb2YgdGhyZWFkcyBiYXNlZCBv
+					biBhbW91bnQgb2YgQ1BVIHRocmVhZHMpXAog
+					ICAgcHJpbnRmICclc1xcMCcgIiRce2ZpbGVz
+					W0BdXH0iIHwgeGFyZ3MgLTAgLVAgJChzeXNj
+					dGwgLW4gaHcubmNwdSkgLW4gMSBleGl2MiAt
+					TSJzZXQgRXhpZi5JbWFnZS5Bc1Nob3ROZXV0
+					cmFsIFJhdGlvbmFsICR2aXRfMDEvMTAwMDAw
+					MCAxLzEgJHZpdF8wMi8xMDAwMDAwIlwKXAog
+					ICAgd2FpdCAjIFdhaXQgZm9yIHRoZSB4YXJn
+					cyBwcm9jZXNzIHRvIGZpbmlzaFwKICAgIGVj
+					aG8gIkRvbmUgYXBwbHlpbmcgV0IgdG8gdGhp
+					cyBETkcgc2VxdWVuY2UhIlwKICAgICgocmVt
+					YWluaW5nRm9sZGVycyAtPSAxKSlcCiAgICBl
+					Y2hvICIkXHtib2xkXH1Gb2xkZXJzIHJlbWFp
+					bmluZzogJHJlbWFpbmluZ0ZvbGRlcnMuJFx7
+					bm9ybWFsXH0iXApcCmRvbmVcClwKZWNobyAi
+					JFx7Ym9sZFx9RG9uZSEkXHtub3JtYWxcfSJc
+					Cn0BAAAAIwAAAAEAAAAHAAAAVFhULnJ0ZhAA
+					AADMxjtftgEAAAAAAAAAAAAA
+					</data>
+					<key>enteredText</key>
+					<string>#!/bin/bash
+
+# GNU public license
+
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the
+# Free Software Foundation, Inc.,
+# 51 Franklin Street, Fifth Floor,
+# Boston, MA 02110-1301, USA.
+
+# Config variables
+nrOfFrameSamples=8
+
+# Variables for terminal output formatting
+bold=$(tput bold)
+normal=$(tput sgr0)
+
+# Uses dot as decimal separator
+export LC_NUMERIC="C"
+
+# Remove this script from the disk if ran from tmp directory
+if [[ "$0" == "/tmp"* ]]; then
+    rm -f -- "$0"
+fi
+
+# Read the folders to process from a text file
+IFS=$'\n' read -d '' -r -a folders &lt; $1
+
+# Remove tmp input file
+rm -f $1
+
+# Install dependencies
+dcrawInstalled=$(type -P dcraw)
+exiv2Installed=$(type -P exiv2)
+
+echo "${normal}"
+
+if [[ $dcrawInstalled &amp;&amp; $exiv2Installed ]]; then
+    echo "Dependencies are installed."
+else
+    echo "You need dcraw ($([[ $dcrawInstalled ]] || echo "not ")installed) and exiv2 ($([[ $exiv2Installed ]] || echo "not ")installed)."
+    echo "I can install it for you, OK?"
+    read -e -p "Y or N? " yn
+    if [[ "y" = "$yn" || "Y" = "$yn" ]]; then
+        brewInstalled=$(type -P brew)
+        if ! [[ brewInstalled ]]; then
+            /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+        fi
+        brew install dcraw exiv2
+    else
+        echo "We need dcraw and exiv2. Stopping."
+        exit
+    fi
+fi
+
+nrOfFolders=${#folders[@]} # Number of elements in array
+remainingFolders=$nrOfFolders
+echo "${bold}Start processing $nrOfFolders folders.${normal}"
+for d in "${folders[@]}"; do
+    # Get all DNG files in current directory
+    IFS=$'\n'
+    files=($(find $d -name "*.dng" -type f ))
+
+    nrOfFrames=${#files[@]}
+    echo "Start processing $nrOfFrames frames."
+
+    if ! (($nrOfFrames &gt; 0)); then
+        # Skip this folder if there are no DNG frames
+        echo "Skip folder: $d."
+        continue
+    fi
+
+    if ((nrOfFrameSamples &gt; nrOfFrames)); then
+        echo "Limit amount of samples to the number of frames."
+        nrOfFrameSamples=$nrOfFrames
+    fi
+
+    echo "Taking $nrOfFrameSamples frame samples for Auto White Balance."
+
+    stepSize=$(($nrOfFrames / $nrOfFrameSamples))
+
+    currentStep=$stepSize                # Start here
+    lastStep=$stepSize*$nrOfFrameSamples # End here
+    typeset -i currentStep lastStep      # Declare these variables as integers
+
+    averageMultipliers=(0 0 0 0)
+
+    while ((currentStep &lt;= lastStep)); do
+
+        filePath=${files[currentStep - 1]} # -1 because array index starts at 0
+        echo "AWB frame: $(basename -- $filePath)."
+        dcrawOutput=$(dcraw -T -a -v -c $filePath 2&gt;&amp;1 | awk '/multipliers/ { print $2,$3,$4,$5; exit }')
+        echo "Result of AWB: $dcrawOutput."
+
+        # Split into new multipliers array
+        IFS=' ' read -r -a multipliers &lt;&lt;&lt;$dcrawOutput
+
+        averageMultipliers[0]=$(echo ${averageMultipliers[0]}+${multipliers[0]} | bc -l)
+        averageMultipliers[1]=$(echo ${averageMultipliers[1]}+${multipliers[1]} | bc -l)
+        averageMultipliers[2]=$(echo ${averageMultipliers[2]}+${multipliers[2]} | bc -l)
+        averageMultipliers[3]=$(echo ${averageMultipliers[3]}+${multipliers[3]} | bc -l)
+
+        # Increment with step size
+        currentStep=$(($currentStep + $stepSize))
+    done
+
+    # Average the summed up multipliers
+    averageMultipliers[0]=$(echo ${averageMultipliers[0]}/$nrOfFrameSamples | bc -l)
+    averageMultipliers[1]=$(echo ${averageMultipliers[1]}/$nrOfFrameSamples | bc -l)
+    averageMultipliers[2]=$(echo ${averageMultipliers[2]}/$nrOfFrameSamples | bc -l)
+    averageMultipliers[3]=$(echo ${averageMultipliers[3]}/$nrOfFrameSamples | bc -l)
+
+    echo "Average multipliers: ${averageMultipliers[0]} ${averageMultipliers[1]} ${averageMultipliers[2]} ${averageMultipliers[3]}."
+
+    vit_01=$(echo ${averageMultipliers[1]}/${averageMultipliers[0]} | bc -l)
+    vit_02=$(echo ${averageMultipliers[3]}/${averageMultipliers[2]} | bc -l)
+
+    # Multiply by 1000000
+    vit_01=$(echo $vit_01*1000000 | bc)
+    vit_02=$(echo $vit_02*1000000 | bc)
+
+    # Round to an integer
+    vit_01=$(printf "%.0f\n" "$vit_01")
+    vit_02=$(printf "%.0f\n" "$vit_02")
+
+    echo "Start applying WB to this DNG sequence..."
+    # Apply the white balance value to all DNG files in parallel (amount of threads based on amount of CPU threads)
+    printf '%s\0' "${files[@]}" | xargs -0 -P $(sysctl -n hw.ncpu) -n 1 exiv2 -M"set Exif.Image.AsShotNeutral Rational $vit_01/1000000 1/1 $vit_02/1000000"
+
+    wait # Wait for the xargs process to finish
+    echo "Done applying WB to this DNG sequence!"
+    ((remainingFolders -= 1))
+    echo "${bold}Folders remaining: $remainingFolders.${normal}"
+
+done
+
+echo "${bold}Done!${normal}"
+</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.GetSpecifiedText</string>
+				<key>CFBundleVersion</key>
+				<string>1.2.1</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryText</string>
+				</array>
+				<key>Class Name</key>
+				<string>AMGetSpecifiedTextAction</string>
+				<key>Keywords</key>
+				<array>
+					<string>Get</string>
+					<string>Text</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>09BC7174-9F42-49D4-822A-066F9AD3B331</string>
+				<key>UUID</key>
+				<string>A77FCBA6-43DD-4BAE-9329-C89928B2F1D9</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>TextEdit</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>enteredRTFDData</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+					<key>1</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>enteredText</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>1</string>
+					</dict>
+				</dict>
+				<key>conversionLabel</key>
+				<integer>0</integer>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>761.500000:382.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Get Specified Text.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.string</string>
+						<string>com.apple.cocoa.attributed-string</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>2.2.1</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Finder</string>
+					<string>TextEdit</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>checkedForDefaultEncoding</key>
+					<dict/>
+					<key>newFileFolderPath</key>
+					<dict>
+						<key>isPathPopUp</key>
+						<true/>
+						<key>variableUUIDsInMenu</key>
+						<array>
+							<string>ED2A2B11-4A2B-4D13-8B24-E05E806F0F00</string>
+						</array>
+					</dict>
+					<key>newFileName</key>
+					<dict>
+						<key>tokenizedValue</key>
+						<array>
+							<string>awb.sh.txt</string>
+						</array>
+					</dict>
+					<key>newFileTextEncoding</key>
+					<dict/>
+					<key>replaceExistingFiles</key>
+					<dict/>
+					<key>textFormat</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>public.text</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/New Text File.action</string>
+				<key>ActionName</key>
+				<string>New Text File</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>checkedForDefaultEncoding</key>
+					<true/>
+					<key>newFileFolderPath</key>
+					<string>/private/tmp</string>
+					<key>newFileName</key>
+					<string>awb.sh.txt</string>
+					<key>newFileTextEncoding</key>
+					<integer>4</integer>
+					<key>replaceExistingFiles</key>
+					<true/>
+					<key>textFormat</key>
+					<integer>1</integer>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.NewTextFile</string>
+				<key>CFBundleVersion</key>
+				<string>2.2.1</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<true/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryText</string>
+				</array>
+				<key>Class Name</key>
+				<string>AMNewTextFileAction</string>
+				<key>InputUUID</key>
+				<string>387B2711-2B58-45E9-B02D-687E254CD049</string>
+				<key>Keywords</key>
+				<array>
+					<string>Create</string>
+					<string>Make</string>
+					<string>File</string>
+					<string>Text</string>
+					<string>Save</string>
+					<string>New</string>
+					<string>Document</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>7C857E6B-C88F-4B97-832F-277A14805A4A</string>
+				<key>UUID</key>
+				<string>11584BA1-718C-4106-A7C0-D7D9582748C3</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Finder</string>
+					<string>TextEdit</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<integer>0</integer>
+						<key>name</key>
+						<string>newFileTextEncoding</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+					<key>1</key>
+					<dict>
+						<key>default value</key>
+						<integer>0</integer>
+						<key>name</key>
+						<string>replaceExistingFiles</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>1</string>
+					</dict>
+					<key>2</key>
+					<dict>
+						<key>default value</key>
+						<string>~/Desktop</string>
+						<key>name</key>
+						<string>newFileFolderPath</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>2</string>
+					</dict>
+					<key>3</key>
+					<dict>
+						<key>default value</key>
+						<integer>0</integer>
+						<key>name</key>
+						<string>checkedForDefaultEncoding</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>3</string>
+					</dict>
+					<key>4</key>
+					<dict>
+						<key>default value</key>
+						<string>Untitled.txt</string>
+						<key>name</key>
+						<string>newFileName</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>4</string>
+					</dict>
+					<key>5</key>
+					<dict>
+						<key>default value</key>
+						<integer>0</integer>
+						<key>name</key>
+						<string>textFormat</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>5</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>761.500000:613.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/New Text File.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.string</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>2.0.3</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>COMMAND_STRING</key>
+					<dict/>
+					<key>CheckedForUserDefaultShell</key>
+					<dict/>
+					<key>inputMethod</key>
+					<dict/>
+					<key>shell</key>
+					<dict/>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.string</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run Shell Script.action</string>
+				<key>ActionName</key>
+				<string>Run Shell Script</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>COMMAND_STRING</key>
+					<string>mv /tmp/awb.sh.txt /tmp/awb.sh
+chmod +x /tmp/awb.sh</string>
+					<key>CheckedForUserDefaultShell</key>
+					<true/>
+					<key>inputMethod</key>
+					<integer>0</integer>
+					<key>shell</key>
+					<string>/bin/bash</string>
+					<key>source</key>
+					<string></string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.RunShellScript</string>
+				<key>CFBundleVersion</key>
+				<string>2.0.3</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunShellScriptAction</string>
+				<key>InputUUID</key>
+				<string>1AF91C1E-2FB7-4267-9388-A8F4BE6FA27F</string>
+				<key>Keywords</key>
+				<array>
+					<string>Shell</string>
+					<string>Script</string>
+					<string>Command</string>
+					<string>Run</string>
+					<string>Unix</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>D802A66B-8E8A-47D5-AC8F-30F48190A7A9</string>
+				<key>UUID</key>
+				<string>ECF996F6-CB22-4FEE-91DC-E8E3CC249899</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<integer>0</integer>
+						<key>name</key>
+						<string>inputMethod</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+					<key>1</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>1</string>
+					</dict>
+					<key>2</key>
+					<dict>
+						<key>default value</key>
+						<false/>
+						<key>name</key>
+						<string>CheckedForUserDefaultShell</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>2</string>
+					</dict>
+					<key>3</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>COMMAND_STRING</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>3</string>
+					</dict>
+					<key>4</key>
+					<dict>
+						<key>default value</key>
+						<string>/bin/sh</string>
+						<key>name</key>
+						<string>shell</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>4</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>761.500000:795.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run AppleScript.action</string>
+				<key>ActionName</key>
+				<string>Run AppleScript</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>source</key>
+					<string>on run {input, parameters}		activate application "Terminal"	tell application "Terminal"		do script "/tmp/awb.sh '/tmp/DNGfoldersToAWB.txt'"	end tell		return inputend run</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.RunScript</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunScriptAction</string>
+				<key>Disabled</key>
+				<false/>
+				<key>InputUUID</key>
+				<string>0F0AC15D-C1CE-4B2F-AEF6-25DF2274F5AF</string>
+				<key>Keywords</key>
+				<array>
+					<string>Run</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>1B16925E-D811-4DA7-83C0-650D72BFA451</string>
+				<key>UUID</key>
+				<string>5DD90BEE-6155-4169-9E81-FC628D8A6CDE</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>on run {input, parameters}
+	
+	(* Your script goes here *)
+	
+	return input
+end run</string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>761.500000:1040.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+	</array>
+	<key>connectors</key>
+	<dict>
+		<key>20463E84-BF5B-4186-B4C9-AB9C4A5A0373</key>
+		<dict>
+			<key>from</key>
+			<string>11584BA1-718C-4106-A7C0-D7D9582748C3 - 11584BA1-718C-4106-A7C0-D7D9582748C3</string>
+			<key>to</key>
+			<string>ECF996F6-CB22-4FEE-91DC-E8E3CC249899 - ECF996F6-CB22-4FEE-91DC-E8E3CC249899</string>
+		</dict>
+		<key>3E0EA7E2-A768-4AFD-B24B-57FECEE24FD4</key>
+		<dict>
+			<key>from</key>
+			<string>ECF996F6-CB22-4FEE-91DC-E8E3CC249899 - ECF996F6-CB22-4FEE-91DC-E8E3CC249899</string>
+			<key>to</key>
+			<string>5DD90BEE-6155-4169-9E81-FC628D8A6CDE - 5DD90BEE-6155-4169-9E81-FC628D8A6CDE</string>
+		</dict>
+		<key>41B90948-73E7-433C-8DFE-69CCBAF11A41</key>
+		<dict>
+			<key>from</key>
+			<string>30ED1206-DEBB-4C52-993A-6790588F1CB8 - 30ED1206-DEBB-4C52-993A-6790588F1CB8</string>
+		</dict>
+		<key>68CFAB95-4F44-4202-B890-41E5DD2C319F</key>
+		<dict>
+			<key>from</key>
+			<string>A77FCBA6-43DD-4BAE-9329-C89928B2F1D9 - A77FCBA6-43DD-4BAE-9329-C89928B2F1D9</string>
+			<key>to</key>
+			<string>11584BA1-718C-4106-A7C0-D7D9582748C3 - 11584BA1-718C-4106-A7C0-D7D9582748C3</string>
+		</dict>
+	</dict>
+	<key>variables</key>
+	<array>
+		<dict>
+			<key>UUID</key>
+			<string>ED2A2B11-4A2B-4D13-8B24-E05E806F0F00</string>
+			<key>identifier</key>
+			<string>com.apple.Automator.Variable.Text</string>
+			<key>name</key>
+			<string>Text</string>
+			<key>value</key>
+			<array>
+				<string>/private/tmp/</string>
+			</array>
+		</dict>
+	</array>
+	<key>workflowMetaData</key>
+	<dict>
+		<key>applicationBundleID</key>
+		<string>com.apple.finder</string>
+		<key>applicationBundleIDsByPath</key>
+		<dict>
+			<key>/System/Library/CoreServices/Finder.app</key>
+			<string>com.apple.finder</string>
+		</dict>
+		<key>applicationPath</key>
+		<string>/System/Library/CoreServices/Finder.app</string>
+		<key>applicationPaths</key>
+		<array>
+			<string>/System/Library/CoreServices/Finder.app</string>
+		</array>
+		<key>inputTypeIdentifier</key>
+		<string>com.apple.Automator.fileSystemObject.folder</string>
+		<key>outputTypeIdentifier</key>
+		<string>com.apple.Automator.nothing</string>
+		<key>presentationMode</key>
+		<integer>15</integer>
+		<key>processesInput</key>
+		<integer>0</integer>
+		<key>serviceApplicationBundleID</key>
+		<string>com.apple.finder</string>
+		<key>serviceApplicationPath</key>
+		<string>/System/Library/CoreServices/Finder.app</string>
+		<key>serviceInputTypeIdentifier</key>
+		<string>com.apple.Automator.fileSystemObject.folder</string>
+		<key>serviceOutputTypeIdentifier</key>
+		<string>com.apple.Automator.nothing</string>
+		<key>serviceProcessesInput</key>
+		<integer>0</integer>
+		<key>systemImageName</key>
+		<string>NSActionTemplate</string>
+		<key>useAutomaticInputType</key>
+		<integer>0</integer>
+		<key>workflowTypeIdentifier</key>
+		<string>com.apple.Automator.servicesMenu</string>
+	</dict>
+</dict>
+</plist>
